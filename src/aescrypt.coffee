@@ -27,11 +27,11 @@ class AESCrypt
     key = @key keytext
     iv  = @salt()
     encrypted: @encrypt key, iv, cleardata
-    salt: iv.toJSON()
+    salt: iv.toString "base64"
 
   @decryptWithSalt: (keytext, salt, encryptdata) =>
     key = @key keytext
-    iv  = new Buffer salt
+    iv  = new Buffer salt, "base64"
     @decrypt key, iv, encryptdata
 
 
