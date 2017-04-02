@@ -1,0 +1,30 @@
+{
+  "name": "aescrypt",
+  "version": "1.0.0",
+  "description": "AES Salted Encryption helper",
+  "main": "lib/aescrypt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "coffee --bare --map --runtime node -o lib/ -c src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nextorigin/aescrypt.git"
+  },
+  "keywords": [
+    "aes",
+    "crypto",
+    "encryption",
+    "salt",
+    "security"
+  ],
+  "author": "doublerebel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nextorigin/aescrypt/issues"
+  },
+  "homepage": "https://github.com/nextorigin/aescrypt#readme",
+  "devDependencies": {
+    "coffee-script": "1.11.0"
+  }
+}
